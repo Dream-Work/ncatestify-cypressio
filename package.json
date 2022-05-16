@@ -1,0 +1,20 @@
+{
+  "name": "ncatestify-cypressio",
+  "version": "1.0.0",
+  "description": "TESTIFY package to start with Cypress.IO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Cypress.IO",
+    "testing",
+    "cypress"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.6.1",
+    "typescript": "^4.6.4"
+  }
+}
