@@ -15,7 +15,7 @@ npm install
 4. Run tests in Cypress tool and set full startpage URL
 
 ```bash
-npx cypress open --env "startUrl=https://testify.team/de"
+npx cypress open --env startUrl=https://testify.team/de
 ```
 
 or
