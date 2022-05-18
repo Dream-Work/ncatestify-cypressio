@@ -5,11 +5,12 @@ describe("Validate internal links", () => {
   });
 
   it("Every page has status code 200 and no redirect", () => {
-    const specialCases = ["/"];
+    const hostname = window.location.hostname.split(".").slice(-2).join(".");
+
     cy.get("a").each((item) => {
       const url = item.attr("href");
 
-      if (specialCases.indexOf(url) == -1) {
+      if (url && (url.startsWith("/") || url.includes(hostname))) {
         cy.request({
           url: url,
           followRedirect: false,
