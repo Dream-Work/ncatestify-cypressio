@@ -4,7 +4,11 @@
   "description": "TESTIFY package to start with Cypress.IO",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "npm link"
+  },
+  "bin":{
+    "ncatestify": "node ./cypress/scripts/run.js"
   },
   "keywords": [
     "Cypress.IO",
