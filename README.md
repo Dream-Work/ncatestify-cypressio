@@ -15,38 +15,40 @@ npm install
 4. Run tests in Cypress tool and set full startpage URL
 
 ```bash
-npx cypress open --env startUrl=https://testify.team/de
+npm run test --url=<URL>
 ```
 
-or
+## NPM Package (in progress)
+
+### Project goal
+
+Later on, this repository will be provided as a NPM-package to use it without the need to clone the repository. To use it, run the install script.
+
+**NPM Package is not available yet!**
 
 ```bash
-./node_modules/.bin/cypress open
+npm install -g ncatestify-cypressio
 ```
 
-5. Run tests from cli with screenshot and video output
+After that, you'll be able to use this package directly from your terminal-session.
 
 ```bash
-npx cypress run
+ncatestify startUrl=<URL>
 ```
-
-or
-
-```bash
-./node_modules/.bin/cypress run
-```
-
-## CLI
 
 ### ./cypress/scripts/run.js
 
 This file is used to call the cypress-process and (later) automatically start the test-runs.
 
+### Manually bind the run.js to your local environment
+
 To use this, either install the package via NPM (in this case, it will automatically done with the install-script) or link it manually with following command.
 
 ```bash
-npm link
+npm run install
 ```
+
+This will run "npm link" and create a symlink for "ncatestify".
 
 After that, you'll be able to start the script with:
 

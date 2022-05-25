@@ -4,10 +4,10 @@
   "description": "TESTIFY package to start with Cypress.IO",
   "main": "index.js",
   "scripts": {
-    "test": "./cypress/scripts/run.js --startUrl=$npm_config_url",
+    "test": "./cypress/scripts/run.js startUrl=$npm_config_url",
     "install": "npm link"
   },
-  "bin":{
+  "bin": {
     "ncatestify": "./cypress/scripts/run.js"
   },
   "keywords": [
