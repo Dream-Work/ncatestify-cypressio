@@ -8,7 +8,7 @@
     "install": "npm link"
   },
   "bin":{
-    "ncatestify": "node ./cypress/scripts/run.js"
+    "ncatestify": "./cypress/scripts/run.js"
   },
   "keywords": [
     "Cypress.IO",
