@@ -37,7 +37,9 @@ or
 ```
 
 ## CLI
+
 ### ./cypress/scripts/run.js
+
 This file is used to call the cypress-process and (later) automatically start the test-runs.
 
 To use this, either install the package via NPM (in this case, it will automatically done with the install-script) or link it manually with following command.
@@ -47,10 +49,15 @@ npm link
 ```
 
 After that, you'll be able to start the script with:
+
 ```bash
 ncatestify startUrl=https://testify.team/de
 ```
 
 ## German YouTube Tutorial series
 
+https://www.youtube.com/playlist?list=PLKrKzhBjw2Y9ceCxO3ollOc4eIVPAjiHs
+
 ### Team behind
+
+https://testify.team/de
