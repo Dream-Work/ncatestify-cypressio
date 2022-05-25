@@ -4,7 +4,7 @@
   "description": "TESTIFY package to start with Cypress.IO",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./cypress/scripts/run.js --startUrl=$npm_config_url",
     "install": "npm link"
   },
   "bin":{
