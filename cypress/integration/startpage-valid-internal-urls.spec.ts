@@ -22,4 +22,8 @@ describe("Validate internal links", () => {
       }
     });
   });
+
+  it('Validate that imprint is visable', () => {
+    cy.get('a').contains('Impressum').should('be.visible');
+  })
 });
