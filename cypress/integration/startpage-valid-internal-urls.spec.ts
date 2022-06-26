@@ -10,7 +10,7 @@ describe("Validate internal links", () => {
     cy.get("a").each((item) => {
       const url = item.attr("href");
 
-      if (url && (url.startsWith("/") || url.includes(hostname))) {
+      if (url.indexOf('mailto') == -1 && url && (url.startsWith("/") || url.includes(hostname))) {
         cy.request({
           url: url,
           followRedirect: false,
